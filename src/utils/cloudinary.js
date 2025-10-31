@@ -30,4 +30,16 @@ const uploadOnCloudinary=async(localFilePath)=>{
 
 }
 
+// const deleteOnCloudinary =async(fileUrl)=>{
+//     try {
+//         if(!fileUrl) return;    
+//         const segments=fileUrl.split('/');
+//         const fileNameWithExtension=segments[segments.length -1];
+//         const [publicId]=fileNameWithExtension.split('.'); //getting public id by removing extension from file name     
+//         await cloudinary.uploader.destroy(publicId);
+//     } catch (error) {
+//         console.error("Error in deleting file from cloudinary:",error);
+//     }   
+// }
+
 export {uploadOnCloudinary};
